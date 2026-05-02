@@ -18,7 +18,7 @@ const BooksCard = ({ book }) => {
                     {book.title}
                     <div className={`badge border-green-500 font-bold ${book.category === 'Tech' ? ' text-green-700' : book.category === 'Science' ? 'text-yellow-500' : ' text-green-400'}`}>{book.category}</div>
                 </h2>
-                <p className='text-[16px] font-medium text-gray-600'>{book.description}</p>
+                <p className='text-[16px] font-medium text-gray-600 line-clamp-1'>{book.description}</p>
 
                 <div className='card-actions justify-end'>
                     <Link href={`/all-books/${book.id}`}>
