@@ -23,11 +23,11 @@ const Navbar = () => {
                 </div>
                 <Link href={'/'} className="bg-green-50 flex items-center justify-center rounded-full text-xl">
                     <Image
-                        src={"/logo.png"}
+                        src={"/logo-nav.png"}
                         alt="logo"
                         loading="eager"
-                        width={50}
-                        height={50}
+                        width={60}
+                        height={60}
                         className="object-cover h-auto w-auto"
                     />
                 </Link>
