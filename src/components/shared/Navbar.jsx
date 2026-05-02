@@ -1,5 +1,8 @@
+'use client'
+
 import Link from "next/link";
 import Image from "next/image";
+import { authClient } from "@/lib/auth-client";
 
 const Navbar = () => {
 
@@ -8,6 +11,11 @@ const Navbar = () => {
         <li><Link href={'/all-books'}>All Books</Link></li>
         <li><Link href={'/'}>My Profile</Link></li>
     </>
+
+    const { data: session, isPending } = authClient.useSession();
+    const user = session?.user;
+
+
     return (
         <div className="navbar bg-base-100 shadow-sm px-10">
             <div className="navbar-start">
@@ -38,9 +46,24 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <Link href={'/login'}>
-                    <button className="btn btn-success">Login</button>
-                </Link>
+                {
+                    isPending ? <span className="loading loading-spinner loading-md"></span> :
+                        user ? (
+                            <div className="flex gap-5 items-center ">
+                                <div className="hidden md:flex items-center gap-3">
+                                    <h2 className="text-lg font-bold">Hello, {user?.name}</h2>
+                                    <Image className="rounded-full" src={user?.image} alt="user avatar" width={40} height={40}></Image>
+                                </div>
+                                <button className="btn btn-primary" onClick={async () => await authClient.signOut()}>Logout</button>
+                            </div>
+                        ) :
+                            (
+                                <Link href={'/login'}>
+                                    <button className="btn btn-success">Login</button>
+                                </Link>
+                            )
+                }
+
             </div>
         </div>
     );
