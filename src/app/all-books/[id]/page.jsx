@@ -10,7 +10,7 @@ const BookDetailPage = async ({ params }) => {
     const book = books.find(b => b.id == id);
     // console.log(book);
     return (
-        <div className="min-h-screen flex items-center justify-center bg-base-200 p-4">
+        <div className="min-h-screen flex items-center justify-center bg-base-100 p-4">
             <div className="max-w-5xl w-full bg-base-100 shadow-xl rounded-2xl overflow-hidden grid md:grid-cols-2 gap-6">
 
                 <div className="bg-base-200 flex items-center justify-center p-6">
