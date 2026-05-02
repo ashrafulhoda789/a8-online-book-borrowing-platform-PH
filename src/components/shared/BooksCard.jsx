@@ -16,7 +16,7 @@ const BooksCard = ({ book }) => {
             <div className="card-body">
                 <h2 className="card-title font-bold flex justify-between">
                     {book.title}
-                    <div className="badge badge-success text-white font-bold">{book.category}</div>
+                    <div className={`badge border-green-500 font-bold ${book.category === 'Tech' ? ' text-green-700' : book.category === 'Science' ? 'text-yellow-500' : ' text-green-400'}`}>{book.category}</div>
                 </h2>
                 <p className='text-[16px] font-medium text-gray-600'>{book.description}</p>
 
