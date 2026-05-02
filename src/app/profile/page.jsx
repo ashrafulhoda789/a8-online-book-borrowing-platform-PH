@@ -13,10 +13,6 @@ const ProfilePage = () => {
     const user = userData.data?.user;
     // console.log(user);
 
-    if (!user) {
-        redirect('/login');
-    }
-
     return (
         <div className="min-h-screen bg-base-100 flex items-center justify-center p-6">
             <div className="card w-full max-w-md bg-base-100 shadow-xl p-5">
