@@ -6,7 +6,7 @@
     "description": "A guide to building good habits and breaking bad ones.",
     "category": "Tech",
     "available_quantity": 5,
-    "image_url": "https://covers.openlibrary.org/b/title/Atomic%20Habits-L.jpg",
+    "image_url": "https://i.ibb.co.com/j99C5zKc/atomic-habit.png",
     "borrowCount": 320
   },
   {
@@ -16,18 +16,18 @@
     "description": "A philosophical story about following your dreams.",
     "category": "Story",
     "available_quantity": 7,
-    "image_url": "https://covers.openlibrary.org/b/title/The%20Alchemist-L.jpg",
+    "image_url": "https://i.ibb.co.com/1GyWhLnz/the-alchemist.webp",
     "borrowCount": 280
   },
   {
     "id": 3,
-    "title": "Brief Answers to the Big Questions",
-    "author": "Stephen Hawking",
-    "description": "Insights into the biggest questions about the universe.",
+    "title": "Sapiens",
+    "author": "Yuval Noah Harari",
+    "description": "A brief history of humankind.",
     "category": "Science",
-    "available_quantity": 4,
-    "image_url": "https://covers.openlibrary.org/b/title/Brief%20Answers%20to%20the%20Big%20Questions-L.jpg",
-    "borrowCount": 210
+    "available_quantity": 5,
+    "image_url": "https://covers.openlibrary.org/b/title/Sapiens-L.jpg",
+    "borrowCount": 290
   },
   {
     "id": 4,
@@ -51,13 +51,13 @@
   },
   {
     "id": 6,
-    "title": "Sapiens",
-    "author": "Yuval Noah Harari",
-    "description": "A brief history of humankind.",
+    "title": "Brief Answers to the Big Questions",
+    "author": "Stephen Hawking",
+    "description": "Insights into the biggest questions about the universe.",
     "category": "Science",
-    "available_quantity": 5,
-    "image_url": "https://covers.openlibrary.org/b/title/Sapiens-L.jpg",
-    "borrowCount": 290
+    "available_quantity": 4,
+    "image_url": "https://i.ibb.co.com/R4P4wMjF/stephen-hawking.jpg",
+    "borrowCount": 210
   },
   {
     "id": 7,
