@@ -7,10 +7,10 @@ const MostBorrowed = async() => {
     const mostBorrowed = [...books].sort((a,b) => b.borrowCount - a.borrowCount).slice(0,3);
 
     return (
-        <div>
+        <div className="my-30">
             <h2 className="text-3xl font-bold">Most Borrowed Books</h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-10">
+            <div className="flex flex-col md:flex-row gap-5 my-10 justify-center items-center ">
                 {
                     mostBorrowed.map(book => <BooksCard key={book.id} book={book}></BooksCard>)
                 }
