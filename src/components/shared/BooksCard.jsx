@@ -13,12 +13,24 @@ const BooksCard = ({ book }) => {
                     className="rounded-md w-50 h-70 object-center"
                 />
             </figure>
-            <div className="card-body">
-                <h2 className="card-title font-bold flex justify-between">
-                    {book.title}
-                    <div className={`badge border-green-500 font-bold ${book.category === 'Tech' ? ' text-green-700' : book.category === 'Science' ? 'text-yellow-500' : ' text-green-400'}`}>{book.category}</div>
+            <div className="card-body  flex flex-col">
+                <h2 className="card-title font-bold flex justify-between items-start gap-2">
+                    <span className="truncate">
+                        {book.title}
+                    </span>
+
+                    <div className={`badge border-green-500 font-bold whitespace-nowrap ${book.category === 'Tech'
+                            ? 'text-green-700'
+                            : book.category === 'Science'
+                                ? 'text-yellow-500'
+                                : 'text-green-400'
+                        }`}>
+                        {book.category}
+                    </div>
                 </h2>
-                <p className='text-[16px] font-medium text-gray-600 line-clamp-1'>{book.description}</p>
+                <div className='overflow-hidden flex-1'>
+                    <p className='line-clamp-1 text-[16px] font-medium text-gray-600 '>{book.description}</p>
+                </div>
 
                 <div className='card-actions justify-end'>
                     <Link href={`/all-books/${book.id}`}>
