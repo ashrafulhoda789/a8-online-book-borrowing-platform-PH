@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { FaEye, FaEyeSlash, FaGoogle } from "react-icons/fa";
 import { toast } from "react-toastify";
 
 
@@ -40,6 +40,12 @@ const RegisterPage = () => {
 
     // console.log(watch('email'));
     // console.log(errors);
+
+    const handleGoogleSignIn = async () => {
+        const data = await authClient.signIn.social({
+            provider: "google",
+        });
+    }
 
     return (
         <div className="container mx-auto min-h-[80vh] bg-gray-200 flex items-center justify-center">
@@ -80,7 +86,8 @@ const RegisterPage = () => {
                     </fieldset>
                     <button className="btn btn-neutral w-full">Register</button>
                 </form>
-
+                <div className="divider">Or</div>
+                <button className="btn w-full " onClick={handleGoogleSignIn}><FaGoogle></FaGoogle> Google</button>
                 <p className="mt-5">Already have an account?<Link href={'/login'} className="text-blue-500">Register</Link> </p>
 
             </div>
