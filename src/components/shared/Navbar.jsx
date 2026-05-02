@@ -21,7 +21,7 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <Link href={'/'} className="bg-green-50 flex items-center justify-center rounded-full text-xl">
+                <Link href={'/'} className="flex items-center justify-center rounded-full text-xl">
                     <Image
                         src={"/logo-nav.png"}
                         alt="logo"

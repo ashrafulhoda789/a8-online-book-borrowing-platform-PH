@@ -2,7 +2,7 @@ import Banner from "@/components/homepage/Banner";
 import FeaturedBooks from "@/components/homepage/FeaturedBooks";
 import MemberShipPlans from "@/components/homepage/MemberShipPlans";
 import MostBorrowed from "@/components/homepage/MostBorrowed";
-import NewArrivalBooks from "@/components/shared/NewArrivalBooks";
+import NewArrivalBooks from "@/components/homepage/NewArrivalBooks";
 import Image from "next/image";
 
 export default function Home() {
