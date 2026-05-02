@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 
 const BooksCard = ({ book }) => {
-    console.log(book);
+    // console.log(book);
 
     return (
         <div className="card bg-base-100 shadow-sm">
@@ -21,7 +21,7 @@ const BooksCard = ({ book }) => {
                 <p className='text-[16px] font-medium text-gray-600'>{book.description}</p>
 
                 <div className='card-actions justify-end'>
-                    <Link href={'/'}>
+                    <Link href={`/all-books/${book.id}`}>
                         <button className='btn btn-success text-white text-[16px] font-semibold rounded-lg '>View Details</button>
                     </Link>
                 </div>
