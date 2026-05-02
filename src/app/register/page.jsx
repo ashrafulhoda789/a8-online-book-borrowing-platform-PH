@@ -1,9 +1,11 @@
 'use client'
 import { authClient } from "@/lib/auth-client";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { toast } from "react-toastify";
 
 
 const RegisterPage = () => {
@@ -12,8 +14,10 @@ const RegisterPage = () => {
 
     const [isShowPassword, setIsShowPassword] = useState(false);
 
+    const router = useRouter();
+
     const handleRegisterFunc = async (data) => {
-        
+
         const { email, name, photo, password } = data;
 
         const { data: res, error } = await authClient.signUp.email({
@@ -21,15 +25,16 @@ const RegisterPage = () => {
             email: email, // required
             password: password, // required
             image: photo,
-            callbackURL: "/",
+            callbackURL: "/login",
         });
 
         // console.log(res, error);
         if (error) {
-            alert(`${error.message}`);
+            toast.error(`${error.message}`);
         }
         else {
-            alert('SignUp successfull');
+            toast.success('SignUp successfull');
+            router.push('/login');
         }
     }
 
@@ -75,6 +80,8 @@ const RegisterPage = () => {
                     </fieldset>
                     <button className="btn btn-neutral w-full">Register</button>
                 </form>
+
+                <p className="mt-5">Already have an account?<Link href={'/login'} className="text-blue-500">Register</Link> </p>
 
             </div>
         </div>

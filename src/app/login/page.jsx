@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { toast } from "react-toastify";
 
 
 const LoginPage = () => {
@@ -24,10 +25,10 @@ const LoginPage = () => {
         });
 
         if (error) {
-            alert(`${error.message}`);
+            toast.error(`${error.message}`);
         }
         else {
-            alert('SignUp successfull');
+            toast.success('SignUp successfull');
         }
 
         // console.log(res, error);
