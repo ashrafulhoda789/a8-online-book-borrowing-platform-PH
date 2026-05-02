@@ -10,7 +10,7 @@ const Navbar = () => {
     const links = <>
         <li><Link href={'/'}>Home</Link></li>
         <li><Link href={'/all-books'}>All Books</Link></li>
-        <li><Link href={'/'}>My Profile</Link></li>
+        <li><Link href={'/profile'}>My Profile</Link></li>
     </>
 
     const { data: session, isPending } = authClient.useSession();
