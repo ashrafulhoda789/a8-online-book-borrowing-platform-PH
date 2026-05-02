@@ -1,4 +1,7 @@
+
+import BorrowButton from "@/components/shared/BorrowButton";
 import Image from "next/image";
+import { toast } from "react-toastify";
 
 
 const BookDetailPage = async ({ params }) => {
@@ -9,6 +12,8 @@ const BookDetailPage = async ({ params }) => {
 
     const book = books.find(b => b.id == id);
     // console.log(book);
+
+    
     return (
         <div className="min-h-screen flex items-center justify-center bg-base-100 p-4">
             <div className="max-w-5xl w-full bg-base-100 shadow-xl rounded-2xl overflow-hidden grid md:grid-cols-2 gap-6">
@@ -69,9 +74,7 @@ const BookDetailPage = async ({ params }) => {
                     </div>
 
                     <div className="mt-auto pt-4">
-                        <button className="btn btn-success w-full text-white text-lg rounded-xl">
-                            Borrow This Book
-                        </button>
+                        <BorrowButton book={book}></BorrowButton>
                     </div>
 
                 </div>

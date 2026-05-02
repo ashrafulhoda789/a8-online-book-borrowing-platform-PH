@@ -1,4 +1,5 @@
 import BooksCard from "@/components/shared/BooksCard";
+import BooksPage from "@/components/shared/BooksPage";
 
 
 const AllBooksPage = async() => {
@@ -8,11 +9,15 @@ const AllBooksPage = async() => {
     return (
         
         <div className="my-10">
-            <h2 className="text-3xl font-bold">All Books</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-10">
-                {
-                    books.map(book => <BooksCard key={book.id} book={book}></BooksCard>)
-                }
+            
+            <div className="grid grid-cols-1 lg:grid-cols-12">
+                <div className="col-span-2">
+                    Category
+                </div>
+                <div className="col-span-10">
+                    <h2 className="text-3xl font-bold">All Books</h2>
+                    <BooksPage books={books}></BooksPage>
+                </div>
             </div>
         </div>
     );
