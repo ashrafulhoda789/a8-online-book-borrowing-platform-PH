@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "description": "A guide to building good habits and breaking bad ones.",
+    "category": "Tech",
+    "available_quantity": 5,
+    "image_url": "https://covers.openlibrary.org/b/title/Atomic%20Habits-L.jpg",
+    "borrowCount": 320
+  },
+  {
+    "id": 2,
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "description": "A philosophical story about following your dreams.",
+    "category": "Story",
+    "available_quantity": 7,
+    "image_url": "https://covers.openlibrary.org/b/title/The%20Alchemist-L.jpg",
+    "borrowCount": 280
+  },
+  {
+    "id": 3,
+    "title": "Brief Answers to the Big Questions",
+    "author": "Stephen Hawking",
+    "description": "Insights into the biggest questions about the universe.",
+    "category": "Science",
+    "available_quantity": 4,
+    "image_url": "https://covers.openlibrary.org/b/title/Brief%20Answers%20to%20the%20Big%20Questions-L.jpg",
+    "borrowCount": 210
+  },
+  {
+    "id": 4,
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "description": "A handbook of agile software craftsmanship.",
+    "category": "Tech",
+    "available_quantity": 6,
+    "image_url": "https://covers.openlibrary.org/b/title/Clean%20Code-L.jpg",
+    "borrowCount": 350
+  },
+  {
+    "id": 5,
+    "title": "Rich Dad Poor Dad",
+    "author": "Robert Kiyosaki",
+    "description": "Lessons on financial independence and wealth building.",
+    "category": "Tech",
+    "available_quantity": 8,
+    "image_url": "https://covers.openlibrary.org/b/title/Rich%20Dad%20Poor%20Dad-L.jpg",
+    "borrowCount": 400
+  },
+  {
+    "id": 6,
+    "title": "Sapiens",
+    "author": "Yuval Noah Harari",
+    "description": "A brief history of humankind.",
+    "category": "Science",
+    "available_quantity": 5,
+    "image_url": "https://covers.openlibrary.org/b/title/Sapiens-L.jpg",
+    "borrowCount": 290
+  },
+  {
+    "id": 7,
+    "title": "Think and Grow Rich",
+    "author": "Napoleon Hill",
+    "description": "Classic guide to success and personal achievement.",
+    "category": "Tech",
+    "available_quantity": 3,
+    "image_url": "https://covers.openlibrary.org/b/title/Think%20and%20Grow%20Rich-L.jpg",
+    "borrowCount": 260
+  },
+  {
+    "id": 8,
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "description": "A fantasy adventure in Middle-earth.",
+    "category": "Story",
+    "available_quantity": 6,
+    "image_url": "https://covers.openlibrary.org/b/title/The%20Hobbit-L.jpg",
+    "borrowCount": 310
+  },
+  {
+    "id": 9,
+    "title": "A Brief History of Time",
+    "author": "Stephen Hawking",
+    "description": "An exploration of cosmology and black holes.",
+    "category": "Science",
+    "available_quantity": 4,
+    "image_url": "https://covers.openlibrary.org/b/title/A%20Brief%20History%20of%20Time-L.jpg",
+    "borrowCount": 270
+  },
+  {
+    "id": 10,
+    "title": "The Psychology of Money",
+    "author": "Morgan Housel",
+    "description": "Timeless lessons on wealth, greed, and happiness.",
+    "category": "Tech",
+    "available_quantity": 7,
+    "image_url": "https://covers.openlibrary.org/b/title/The%20Psychology%20of%20Money-L.jpg",
+    "borrowCount": 330
+  },
+  {
+    "id": 11,
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "author": "J.K. Rowling",
+    "description": "The magical journey of a young wizard.",
+    "category": "Story",
+    "available_quantity": 9,
+    "image_url": "https://covers.openlibrary.org/b/title/Harry%20Potter%20and%20the%20Sorcerer's%20Stone-L.jpg",
+    "borrowCount": 500
+  },
+  {
+    "id": 12,
+    "title": "The Selfish Gene",
+    "author": "Richard Dawkins",
+    "description": "A gene-centered view of evolution.",
+    "category": "Science",
+    "available_quantity": 4,
+    "image_url": "https://covers.openlibrary.org/b/title/The%20Selfish%20Gene-L.jpg",
+    "borrowCount": 190
+  }
+]
