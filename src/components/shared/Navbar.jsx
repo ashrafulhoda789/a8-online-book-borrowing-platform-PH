@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { authClient } from "@/lib/auth-client";
+import userAvatar from '../../assets/user.png';
 
 const Navbar = () => {
 
@@ -52,7 +53,7 @@ const Navbar = () => {
                             <div className="flex gap-5 items-center ">
                                 <div className="hidden md:flex items-center gap-3">
                                     <h2 className="text-lg font-bold">Hello, {user?.name}</h2>
-                                    <Image className="rounded-full" src={user?.image} alt="user avatar" width={40} height={40}></Image>
+                                    <Image className="rounded-full" src={user?.image || userAvatar} alt="user avatar" width={40} height={40}></Image>
                                 </div>
                                 <button className="btn btn-primary" onClick={async () => await authClient.signOut()}>Logout</button>
                             </div>

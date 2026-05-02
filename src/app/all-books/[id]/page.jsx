@@ -1,5 +1,6 @@
 
 import BorrowButton from "@/components/shared/BorrowButton";
+import { useSession } from "@/lib/auth-client";
 import Image from "next/image";
 import { toast } from "react-toastify";
 
@@ -13,6 +14,7 @@ const BookDetailPage = async ({ params }) => {
     const book = books.find(b => b.id == id);
     // console.log(book);
 
+    
     
     return (
         <div className="min-h-screen flex items-center justify-center bg-base-100 p-4">
