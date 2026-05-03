@@ -1,20 +1,53 @@
+'use client'
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Swiper, SwiperSlide } from "swiper/react";
+import {  Pagination } from "swiper/modules";
 import BooksCard from "../shared/BooksCard";
+import { useEffect, useState } from 'react';
 
-const MostBorrowed = async() => {
-    const res = await fetch('https://a8-online-book-borrowing-platform-p.vercel.app/data.json');
-    const books = await res.json();
+const MostBorrowed = () => {
+    const [books, setBooks] = useState([]);
 
-    const mostBorrowed = [...books].sort((a,b) => b.borrowCount - a.borrowCount).slice(0,3);
+    useEffect(() => {
+        fetch('https://a8-online-book-borrowing-platform-p.vercel.app/data.json')
+            .then(res => res.json())
+            .then(data => {
+                const mostBorrowed = [...data]
+                    .sort((a, b) => b.borrowCount - a.borrowCount)
+                    .slice(0, 4);
+
+                setBooks(mostBorrowed);
+            });
+    }, []);
 
     return (
         <div className="my-30">
-            <h2 className="text-3xl font-bold">Most Borrowed Books</h2>
+            <h2 className="text-3xl font-bold mb-5">Most Borrowed Books</h2>
+
             
-            <div className="flex flex-col md:flex-row gap-5 my-10 justify-center items-center ">
-                {
-                    mostBorrowed.map(book => <BooksCard key={book.id} book={book}></BooksCard>)
-                }
-            </div>
+                <Swiper
+                    pagination={true}
+                    modules={[Pagination]}
+                    spaceBetween={20}
+                    slidesPerView={1}
+                    breakpoints={{
+                        320: {slidesPerView: 1},
+                        640: { slidesPerView: 2 },
+                        1024: { slidesPerView: 3 },
+                    }}
+                    className='mySwiper'
+                >
+                    {
+                        books.map(book => (
+                            <SwiperSlide key={book.id}>
+                                <BooksCard book={book}></BooksCard>
+                            </SwiperSlide>
+                        ))
+                    }
+                </Swiper>
+            
         </div>
     );
 };

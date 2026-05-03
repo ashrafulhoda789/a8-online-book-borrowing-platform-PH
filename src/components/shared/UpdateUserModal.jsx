@@ -1,8 +1,6 @@
 "use client";
 import React, { useRef } from "react";
 import { FaEdit, FaUser } from "react-icons/fa";
-import { useForm } from "react-hook-form";
-import { FaPerson } from "react-icons/fa6";
 import { authClient } from "@/lib/auth-client";
 
 const UpdateUserModal = () => {

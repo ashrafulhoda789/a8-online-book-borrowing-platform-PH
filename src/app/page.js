@@ -11,7 +11,7 @@ export default function Home() {
       <Banner></Banner>
       <NewArrivalBooks></NewArrivalBooks>
       <FeaturedBooks></FeaturedBooks>
-       <div className="mb-10 divider"></div>
+      <div className="mb-10 divider"></div>
       <MostBorrowed></MostBorrowed>
       <MemberShipPlans></MemberShipPlans>
     </div>

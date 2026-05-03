@@ -8,7 +8,7 @@ import { toast } from "react-toastify";
 const BookDetailPage = async ({ params }) => {
     const { id } = await params;
 
-    const res = await fetch('https://a8-online-book-borrowing-platform-p.vercel.app/data.json');
+    const res = await fetch('https://a8-online-book-borrowing-platform-p.vercel.app/data.json', {cache: 'no-store'});
     const books = await res.json();
 
     const book = books.find(b => b.id == id);

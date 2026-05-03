@@ -6,7 +6,7 @@ const MemberShipPlans = () => {
                 <h1 className='text-3xl md:text-4xl font-bold text-[#101727]'>Membership Plans</h1>
                 <p className='text-[16px] text-[#627382]'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
             </div>
-            <div className='mt-8 grid grid-cols-1 md:grid-cols-3 gap-10 w-9/12 mx-auto'>
+            <div className='mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-9/12 mx-auto'>
 
                 <div className="card bg-base-100 shadow-lg">
                     <div className="card-body">

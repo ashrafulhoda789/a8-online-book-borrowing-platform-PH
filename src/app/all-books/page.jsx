@@ -1,3 +1,5 @@
+import 'animate.css';
+
 import BooksCard from "@/components/shared/BooksCard";
 import CategorySideBar from "@/components/shared/CategorySideBar";
 import SearchBar from "@/components/shared/SearchBar";
@@ -37,7 +39,11 @@ const AllBooksPage = async ({ searchParams }) => {
                     <SearchBar></SearchBar>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-10">
                         {filteredBooks.map((book) => (
-                            <BooksCard key={book.id} book={book} />
+                            <div key={book.id}
+                                className="animate__animated animate__fadeInUp transition duration-300 hover:scale-100 hover:shadow-xl"
+                            >
+                                <BooksCard  book={book} />
+                            </div>
                         ))}
                     </div>
                 </div>
