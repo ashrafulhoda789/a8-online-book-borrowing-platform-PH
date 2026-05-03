@@ -2,10 +2,8 @@
 import { authClient } from "@/lib/auth-client";
 import Image from "next/image";
 import userAvatar from '../../assets/user.png';
-import Link from "next/link";
 import UpdateUserModal from "@/components/shared/UpdateUserModal";
-import AuthSession from "@/components/shared/AuthSession";
-import { redirect } from "next/navigation";
+
 
 const ProfilePage = () => {
 

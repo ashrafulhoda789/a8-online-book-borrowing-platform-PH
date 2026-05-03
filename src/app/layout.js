@@ -8,7 +8,6 @@ import { ToastContainer } from "react-toastify";
 import Footer from "@/components/shared/Footer";
 
 
-
 const outfit = Outfit({
   variable: "--font-outfit",
   subsets: ["latin"],
