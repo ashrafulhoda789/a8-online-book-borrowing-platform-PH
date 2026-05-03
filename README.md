@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📚 Online Book Borrowing Platform
 
-## Getting Started
+A modern web application built with **Next.js** that allows users to browse, search, and borrow books online. The platform includes authentication, category filtering, and interactive UI features like sliders and animations.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Live Link
+[Online Book Borrowing Platform](https://a8-online-book-borrowing-platform-p.vercel.app/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## ✨ Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- 🔐 User Authentication (Register / Login / Logout)
+- 📖 Browse all books
+- 🔎 Search books by title
+- 📚 Filter books by category
+- 📄 Book details page
+- 📊 Most borrowed books (SwiperJS carousel)
+- 🆕 New arrival books ticker
+- 🎠 Smooth sliders using SwiperJS
+- 🎨 Animations using Animate.css
+- 🛡️ Protected routes with proxy
+- 📱 Fully responsive UI
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Framework:** Next.js (App Router)
+- **Frontend:** React.js
+- **Styling:** Tailwind CSS & DaisyUI
+- **Authentication:** Better Auth
+- **Database:** MongoDB
+- **UI Libraries:** SwiperJS, Animate.css
+- **Icons:** React Icons
+- **Form Handling:** React Hook Form
+- **Data Source:** REST API (JSON data)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Packages
+- **BetterAuth:** ```npm install better-auth```
+- **MongoDB:** ```npm install mongodb```
+- **MongoDB Adapter:** ```npm install @better-auth/mongo-adapter```
+- **swiperjs:** ```npm install swiper``` 
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
