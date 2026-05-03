@@ -52,15 +52,15 @@ const Navbar = () => {
                         user ? (
                             <div className="flex gap-5 items-center ">
                                 <div className="hidden md:flex items-center gap-3">
-                                    <h2 className="text-lg font-bold">Hello, {user?.name}</h2>
+                                    <h2 className="text-lg font-bold">{user?.name}</h2>
                                     <Image className="rounded-full" src={user?.image || userAvatar} alt="user avatar" width={40} height={40}></Image>
                                 </div>
-                                <button className="btn btn-primary" onClick={async () => await authClient.signOut()}>Logout</button>
+                                <button className="btn btn-primary text-white" onClick={async () => await authClient.signOut()}>Logout</button>
                             </div>
                         ) :
                             (
                                 <Link href={'/login'}>
-                                    <button className="btn btn-success">Login</button>
+                                    <button className="btn btn-success text-white">Login</button>
                                 </Link>
                             )
                 }
