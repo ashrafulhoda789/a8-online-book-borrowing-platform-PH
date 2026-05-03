@@ -4,6 +4,20 @@ import BorrowButton from "@/components/shared/BorrowButton";
 import Image from "next/image";
 import { toast } from "react-toastify";
 
+export const generateMetadata = async ({ params }) => {
+    const { id } = await params;
+
+    const res = await fetch('https://a8-online-book-borrowing-platform-p.vercel.app/data.json', { cache: 'no-store' });
+    const books = await res.json();
+
+    const book = books.find(b => b.id == id);
+
+    return {
+        title: book?.title || "Not Found",
+        description: book?.description,
+    }
+}
+
 
 const BookDetailPage = async ({ params }) => {
     const { id } = await params;
